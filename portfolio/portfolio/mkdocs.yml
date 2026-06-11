@@ -1,0 +1,82 @@
+site_name: Laxmidhar Barik — VLSI Physical Design Engineer
+site_url: https://laxmi-vsd.github.io/portfolio/
+site_description: Portfolio of Laxmidhar Barik, M.Tech VLSI Design student at IIT Bhubaneswar. Specializing in Physical Design, STA, Place & Route, and EDA tools.
+site_author: Laxmidhar Barik
+
+repo_name: laxmi-vsd/portfolio
+repo_url: https://github.com/laxmi-vsd/portfolio
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/laxmi-vsd
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/laxmidhar-barik
+      name: LinkedIn
+    - icon: fontawesome/solid/envelope
+      link: mailto:s26ec09002@iitbbs.ac.in
+      name: Email
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Skills: skills/index.md
+  - Projects: projects/index.md
+  - Publications: publications/index.md
+  - Resume: resume/index.md
+  - Contact: contact/index.md
