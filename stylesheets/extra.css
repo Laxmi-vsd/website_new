@@ -1,0 +1,131 @@
+/* ─── Profile Hero ─────────────────────────────────────────────────── */
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.profile-photo-placeholder {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--md-primary-fg-color);
+  background: var(--md-primary-fg-color--light);
+}
+
+.profile-photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  background: var(--md-primary-fg-color);
+}
+
+.profile-intro {
+  flex: 1;
+  min-width: 260px;
+}
+
+/* ─── Expertise Grid ────────────────────────────────────────────────── */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.expertise-card {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.expertise-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.expertise-card h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* ─── Tools Grid ────────────────────────────────────────────────────── */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.tool-card {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  transition: border-color 0.2s ease;
+}
+
+.tool-card:hover {
+  border-color: var(--md-primary-fg-color);
+}
+
+.tool-card h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* ─── Contact Grid ──────────────────────────────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.contact-card {
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  padding: 1.2rem 1.4rem;
+}
+
+.contact-card h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* ─── General polish ────────────────────────────────────────────────── */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .profile-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-photo-placeholder {
+    margin: 0 auto;
+  }
+}
